@@ -3,7 +3,7 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 const app = express();
 app.use(express.json());
-const port = 3000;
+const port = 3001;
 let db;
 const startServer = async () => {
    const client = await MongoClient.connect("mongodb://localhost:27017/");
